@@ -1,0 +1,16 @@
+packages:
+  "recharts": "Data visualization for earnings and performance charts"
+  "date-fns": "Formatting dates for scheduled videos"
+  "framer-motion": "Smooth page transitions and component animations"
+  "lucide-react": "Beautiful icons for the dashboard"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility function to efficiently merge Tailwind CSS classes"
+
+images:
+  - path: "artifacts/yt-automation/public/images/hero-bg.png"
+    description: "Dark, sleek abstract background with subtle glowing emerald and cyan geometric lines, financial data visualization aesthetic, very subtle depth"
+    aspect_ratio: "16:9"
+
+notes:
+  - Using @workspace/api-client-react for generated React Query hooks
+  - App is designed with a dark, financial automation aesthetic

@@ -1,0 +1,447 @@
+openapi: 3.1.0
+info:
+  title: Api
+  version: 0.1.0
+  description: YouTube Automation System API
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: channels
+    description: YouTube channel management
+  - name: videos
+    description: Video automation pipeline
+  - name: niches
+    description: Niche and topic research
+  - name: schedule
+    description: Upload scheduling
+  - name: earnings
+    description: Revenue tracking
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+
+  /channels:
+    get:
+      operationId: listChannels
+      tags: [channels]
+      summary: List all channels
+      responses:
+        "200":
+          description: List of channels
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Channel"
+    post:
+      operationId: createChannel
+      tags: [channels]
+      summary: Create a new channel
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateChannelRequest"
+      responses:
+        "201":
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Channel"
+
+  /channels/{id}:
+    get:
+      operationId: getChannel
+      tags: [channels]
+      summary: Get a channel
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Channel
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Channel"
+
+  /videos:
+    get:
+      operationId: listVideos
+      tags: [videos]
+      summary: List all videos
+      parameters:
+        - name: channelId
+          in: query
+          schema:
+            type: integer
+        - name: status
+          in: query
+          schema:
+            type: string
+      responses:
+        "200":
+          description: List of videos
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Video"
+    post:
+      operationId: createVideo
+      tags: [videos]
+      summary: Create a new video entry
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateVideoRequest"
+      responses:
+        "201":
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Video"
+
+  /videos/{id}:
+    get:
+      operationId: getVideo
+      tags: [videos]
+      summary: Get a video
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Video
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Video"
+    patch:
+      operationId: updateVideo
+      tags: [videos]
+      summary: Update a video
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UpdateVideoRequest"
+      responses:
+        "200":
+          description: Updated video
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Video"
+
+  /niches:
+    get:
+      operationId: listNiches
+      tags: [niches]
+      summary: List all niche ideas
+      responses:
+        "200":
+          description: List of niches
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Niche"
+    post:
+      operationId: createNiche
+      tags: [niches]
+      summary: Create a niche
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateNicheRequest"
+      responses:
+        "201":
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Niche"
+
+  /schedule:
+    get:
+      operationId: getSchedule
+      tags: [schedule]
+      summary: Get upcoming upload schedule
+      responses:
+        "200":
+          description: Schedule entries
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/ScheduleEntry"
+
+  /earnings:
+    get:
+      operationId: getEarnings
+      tags: [earnings]
+      summary: Get earnings overview
+      responses:
+        "200":
+          description: Earnings data
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/EarningsOverview"
+
+  /earnings/daily:
+    get:
+      operationId: getDailyEarnings
+      tags: [earnings]
+      summary: Get daily earnings
+      responses:
+        "200":
+          description: Daily earnings
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/DailyEarning"
+
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required: [status]
+
+    Channel:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        niche:
+          type: string
+        subscribers:
+          type: integer
+        totalViews:
+          type: integer
+        monthlyRevenue:
+          type: number
+        videosPublished:
+          type: integer
+        status:
+          type: string
+          enum: [active, paused, growing]
+        createdAt:
+          type: string
+      required: [id, name, niche, subscribers, totalViews, monthlyRevenue, videosPublished, status, createdAt]
+
+    CreateChannelRequest:
+      type: object
+      properties:
+        name:
+          type: string
+        niche:
+          type: string
+      required: [name, niche]
+
+    Video:
+      type: object
+      properties:
+        id:
+          type: integer
+        channelId:
+          type: integer
+        title:
+          type: string
+        topic:
+          type: string
+        status:
+          type: string
+          enum: [idea, scripting, voiceover, editing, scheduled, published]
+        aiTool:
+          type: string
+        views:
+          type: integer
+        revenue:
+          type: number
+        scheduledAt:
+          type: string
+        publishedAt:
+          type: string
+        thumbnailUrl:
+          type: string
+        createdAt:
+          type: string
+      required: [id, channelId, title, topic, status, createdAt]
+
+    CreateVideoRequest:
+      type: object
+      properties:
+        channelId:
+          type: integer
+        title:
+          type: string
+        topic:
+          type: string
+      required: [channelId, title, topic]
+
+    UpdateVideoRequest:
+      type: object
+      properties:
+        status:
+          type: string
+        views:
+          type: integer
+        revenue:
+          type: number
+        scheduledAt:
+          type: string
+
+    Niche:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        category:
+          type: string
+        competition:
+          type: string
+          enum: [low, medium, high]
+        earning_potential:
+          type: string
+          enum: [low, medium, high, very_high]
+        cpm:
+          type: number
+        description:
+          type: string
+        aiTools:
+          type: array
+          items:
+            type: string
+        exampleChannels:
+          type: array
+          items:
+            type: string
+        createdAt:
+          type: string
+      required: [id, name, category, competition, earning_potential, cpm, description, aiTools, exampleChannels, createdAt]
+
+    CreateNicheRequest:
+      type: object
+      properties:
+        name:
+          type: string
+        category:
+          type: string
+        competition:
+          type: string
+        earning_potential:
+          type: string
+        cpm:
+          type: number
+        description:
+          type: string
+        aiTools:
+          type: array
+          items:
+            type: string
+        exampleChannels:
+          type: array
+          items:
+            type: string
+      required: [name, category, competition, earning_potential, cpm, description, aiTools, exampleChannels]
+
+    ScheduleEntry:
+      type: object
+      properties:
+        id:
+          type: integer
+        videoId:
+          type: integer
+        channelId:
+          type: integer
+        videoTitle:
+          type: string
+        channelName:
+          type: string
+        scheduledAt:
+          type: string
+        status:
+          type: string
+      required: [id, videoId, channelId, videoTitle, channelName, scheduledAt, status]
+
+    EarningsOverview:
+      type: object
+      properties:
+        todayEarnings:
+          type: number
+        monthlyEarnings:
+          type: number
+        totalEarnings:
+          type: number
+        targetDaily:
+          type: number
+        progressPercent:
+          type: number
+        totalSubscribers:
+          type: integer
+        totalViews:
+          type: integer
+        activeChannels:
+          type: integer
+      required: [todayEarnings, monthlyEarnings, totalEarnings, targetDaily, progressPercent, totalSubscribers, totalViews, activeChannels]
+
+    DailyEarning:
+      type: object
+      properties:
+        date:
+          type: string
+        amount:
+          type: number
+        views:
+          type: integer
+        videos:
+          type: integer
+      required: [date, amount, views, videos]
