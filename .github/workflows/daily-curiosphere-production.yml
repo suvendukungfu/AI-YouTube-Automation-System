@@ -16,10 +16,16 @@ on:
         required: false
         type: string
 
+# Ensure only one production run executes at a time to prevent race conditions & duplicate uploads
+concurrency:
+  group: production-daily-video
+  cancel-in-progress: false
+
 jobs:
   produce-daily-video:
     name: Generate & Publish Daily CurioSphere Video
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     steps:
       - name: Checkout Repository
@@ -27,22 +33,21 @@ jobs:
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: 10
 
-      - name: Setup Node.js
+      - name: Setup Node.js 24
         uses: actions/setup-node@v4
         with:
           node-version: 24
           cache: 'pnpm'
 
-      - name: Install FFmpeg
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y ffmpeg
+      - name: Setup FFmpeg
+        uses: FedericoCarboni/setup-ffmpeg@v3
+        with:
+          ffmpeg-version: release
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Install Dependencies
-        run: pnpm install --no-frozen-lockfile
+      - name: Install Dependencies (Frozen Lockfile)
+        run: pnpm install --frozen-lockfile
 
       - name: Execute Daily Video Production
         env:
