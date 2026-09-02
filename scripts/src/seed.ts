@@ -1,6 +1,22 @@
-try {
-  process.loadEnvFile?.();
-} catch {}
+import fs from "node:fs";
+import path from "node:path";
+
+function loadWorkspaceEnv() {
+  const candidates = [
+    path.resolve(process.cwd(), ".env"),
+    path.resolve(process.cwd(), "../.env"),
+    path.resolve(process.cwd(), "../../.env"),
+  ];
+  for (const envPath of candidates) {
+    if (fs.existsSync(envPath)) {
+      try {
+        process.loadEnvFile?.(envPath);
+        return;
+      } catch {}
+    }
+  }
+}
+loadWorkspaceEnv();
 
 import { db } from "@workspace/db";
 import {

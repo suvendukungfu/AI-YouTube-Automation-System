@@ -31,11 +31,13 @@ export default function Dashboard() {
     activeChannels: 3
   };
 
-  const chartData = dailyData || Array.from({ length: 30 }).map((_, i) => ({
-    date: `Day ${i+1}`,
-    amount: Math.floor(Math.random() * 20000) + 5000,
-    views: Math.floor(Math.random() * 100000),
-  }));
+  const chartData = (Array.isArray(dailyData) && dailyData.length > 0)
+    ? dailyData
+    : Array.from({ length: 30 }).map((_, i) => ({
+        date: `Day ${i+1}`,
+        amount: Math.floor(Math.random() * 20000) + 5000,
+        views: Math.floor(Math.random() * 100000),
+      }));
 
   const progressPercent = e.progressPercent ?? (e.targetDaily && e.todayEarnings ? (e.todayEarnings / e.targetDaily) * 100 : 0);
 
@@ -89,10 +91,10 @@ export default function Dashboard() {
       {/* Stats Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
         {[
-          { label: "Monthly Revenue", value: formatCurrency(e.monthlyEarnings), icon: TrendingUp, color: "text-blue-400" },
-          { label: "Total Views", value: formatNumber(e.totalViews), icon: PlaySquare, color: "text-purple-400" },
-          { label: "Total Subscribers", value: formatNumber(e.totalSubscribers), icon: Users, color: "text-pink-400" },
-          { label: "Active Channels", value: e.activeChannels, icon: Zap, color: "text-amber-400" },
+          { label: "Monthly Revenue", value: formatCurrency(e?.monthlyEarnings ?? 0), icon: TrendingUp, color: "text-blue-400" },
+          { label: "Total Views", value: formatNumber(e?.totalViews ?? 0), icon: PlaySquare, color: "text-purple-400" },
+          { label: "Total Subscribers", value: formatNumber(e?.totalSubscribers ?? 0), icon: Users, color: "text-pink-400" },
+          { label: "Active Channels", value: e?.activeChannels ?? 0, icon: Zap, color: "text-amber-400" },
         ].map((stat, i) => (
           <Card key={i} className="p-6 animate-in fade-in slide-in-from-bottom-4" style={{ animationDelay: `${i * 100}ms` }}>
             <div className="flex items-center gap-4 mb-4">

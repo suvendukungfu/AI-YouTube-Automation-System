@@ -11,7 +11,9 @@ function loadWorkspaceEnv() {
   const currentDir = typeof __dirname !== "undefined" ? __dirname : process.cwd();
   const candidates = [
     path.resolve(process.cwd(), ".env"),
+    path.resolve(process.cwd(), "../.env"),
     path.resolve(process.cwd(), "../../.env"),
+    path.resolve(currentDir, "../.env"),
     path.resolve(currentDir, "../../.env"),
     path.resolve(currentDir, "../../../.env"),
   ];

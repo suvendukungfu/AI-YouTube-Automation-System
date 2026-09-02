@@ -1,0 +1,64 @@
+{
+  "jobId": 385753,
+  "topic": "The Mysteries of the Bermuda Triangle",
+  "totalVariants": 3,
+  "preferredVariantId": "variant-B",
+  "preferredThumbnailUrl": "/artifacts/media/jobs/385753/thumbnails/variant-B-thumb.svg",
+  "variants": [
+    {
+      "variantId": "variant-B",
+      "headline": "1,000 ATMOSPHERES",
+      "styleName": "WARNING_ACCENT",
+      "filePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/385753/thumbnails/variant-B-thumb.svg",
+      "fileUrl": "/artifacts/media/jobs/385753/thumbnails/variant-B-thumb.svg",
+      "dimensions": {
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9"
+      },
+      "fileSizeBytes": 2500,
+      "contrastScore": 94,
+      "wordCountScore": 100,
+      "overallScore": 96.7,
+      "isPreferred": true,
+      "checksum": "a02c841a9955728da61f16a7901b14e6bfcca8e95b5823f0436f877fb45cec47"
+    },
+    {
+      "variantId": "variant-C",
+      "headline": "BOTTOMLESS ABYSS",
+      "styleName": "STAT_FOCUS",
+      "filePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/385753/thumbnails/variant-C-thumb.svg",
+      "fileUrl": "/artifacts/media/jobs/385753/thumbnails/variant-C-thumb.svg",
+      "dimensions": {
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9"
+      },
+      "fileSizeBytes": 2502,
+      "contrastScore": 91,
+      "wordCountScore": 100,
+      "overallScore": 95.1,
+      "isPreferred": false,
+      "checksum": "0d40425e532901cc3eeb142bdbbf715ef5d07bd01c41ae0c93bf74e6455e149c"
+    },
+    {
+      "variantId": "variant-A",
+      "headline": "THE MYSTERIES OF THE",
+      "styleName": "CYBER_GLOW",
+      "filePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/385753/thumbnails/variant-A-thumb.svg",
+      "fileUrl": "/artifacts/media/jobs/385753/thumbnails/variant-A-thumb.svg",
+      "dimensions": {
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9"
+      },
+      "fileSizeBytes": 2510,
+      "contrastScore": 96.5,
+      "wordCountScore": 92,
+      "overallScore": 94.5,
+      "isPreferred": false,
+      "checksum": "b2aaf56ba16d0f8498b0e90234e6fd7ce43dde35a5fc279cf0177fc16844caa2"
+    }
+  ],
+  "generatedAt": "2026-09-02T18:11:16.239Z"
+}
