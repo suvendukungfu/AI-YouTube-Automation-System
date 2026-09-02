@@ -1,0 +1,24 @@
+{
+  "jobId": 505,
+  "topic": "Why Time Moves Faster As You Age",
+  "outputFilePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/505/rendered/job-505-1080p.mp4",
+  "fileSizeBytes": 114,
+  "durationSec": 12,
+  "resolution": "1920x1080",
+  "fps": 60,
+  "videoCodec": "H.264 (libx264)",
+  "audioCodec": "AAC (192kbps 48kHz stereo)",
+  "subtitlesBurned": true,
+  "bgmDuckingApplied": true,
+  "checksum": "7242a8ae1c7b603a3bcb7c4c4ec6697a0145adcca4f31ad494a4a9574a0bb036",
+  "templateUsed": "CURIOSPHERE_CINEMATIC",
+  "renderedAt": "2026-09-02T07:02:28.022Z",
+  "validation": {
+    "readable": true,
+    "durationValid": true,
+    "resolutionValid": true,
+    "audioPresent": true,
+    "fileSizeBytes": 114,
+    "checksum": "7242a8ae1c7b603a3bcb7c4c4ec6697a0145adcca4f31ad494a4a9574a0bb036"
+  }
+}

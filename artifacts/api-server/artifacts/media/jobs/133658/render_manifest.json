@@ -1,0 +1,24 @@
+{
+  "jobId": 133658,
+  "topic": "The Mariana Trench",
+  "outputFilePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/artifacts/api-server/artifacts/media/jobs/133658/rendered/job-133658-1080p.mp4",
+  "fileSizeBytes": 115,
+  "durationSec": 108,
+  "resolution": "1920x1080",
+  "fps": 60,
+  "videoCodec": "H.264 (libx264)",
+  "audioCodec": "AAC (192kbps 48kHz stereo)",
+  "subtitlesBurned": true,
+  "bgmDuckingApplied": true,
+  "checksum": "d7a39d0b07ec9716a053380e32a7998f3a890392a5feecc0de33b73ac82279fd",
+  "templateUsed": "CURIOSPHERE_CINEMATIC",
+  "renderedAt": "2026-09-02T06:52:52.038Z",
+  "validation": {
+    "readable": true,
+    "durationValid": true,
+    "resolutionValid": true,
+    "audioPresent": true,
+    "fileSizeBytes": 115,
+    "checksum": "d7a39d0b07ec9716a053380e32a7998f3a890392a5feecc0de33b73ac82279fd"
+  }
+}

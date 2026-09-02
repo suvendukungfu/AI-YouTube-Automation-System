@@ -1,0 +1,11 @@
+1
+00:00:00,000 --> 00:00:04,500
+The Mariana Trench is the deepest place
+
+2
+00:00:04,550 --> 00:00:06,261
+on Earth.
+
+3
+00:00:06,311 --> 00:00:09,995
+Pressure exceeds one thousand atmospheres.

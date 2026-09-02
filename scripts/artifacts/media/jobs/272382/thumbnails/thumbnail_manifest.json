@@ -1,0 +1,64 @@
+{
+  "jobId": 272382,
+  "topic": "The Fermi Paradox: If Aliens Exist, Where Are They?",
+  "totalVariants": 3,
+  "preferredVariantId": "variant-B",
+  "preferredThumbnailUrl": "/artifacts/media/jobs/272382/thumbnails/variant-B-thumb.svg",
+  "variants": [
+    {
+      "variantId": "variant-B",
+      "headline": "1,000 ATMOSPHERES",
+      "styleName": "WARNING_ACCENT",
+      "filePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/272382/thumbnails/variant-B-thumb.svg",
+      "fileUrl": "/artifacts/media/jobs/272382/thumbnails/variant-B-thumb.svg",
+      "dimensions": {
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9"
+      },
+      "fileSizeBytes": 2514,
+      "contrastScore": 94,
+      "wordCountScore": 100,
+      "overallScore": 96.7,
+      "isPreferred": true,
+      "checksum": "d627a39fc7ca2bd96d2c99caacc7a9d2f936e8671e402bedacfc57adcb26993d"
+    },
+    {
+      "variantId": "variant-C",
+      "headline": "BOTTOMLESS ABYSS",
+      "styleName": "STAT_FOCUS",
+      "filePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/272382/thumbnails/variant-C-thumb.svg",
+      "fileUrl": "/artifacts/media/jobs/272382/thumbnails/variant-C-thumb.svg",
+      "dimensions": {
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9"
+      },
+      "fileSizeBytes": 2516,
+      "contrastScore": 91,
+      "wordCountScore": 100,
+      "overallScore": 95.1,
+      "isPreferred": false,
+      "checksum": "2cec18e23839b9287df330fdda20e1f81c3d385e6122efc6d492ea3089b66702"
+    },
+    {
+      "variantId": "variant-A",
+      "headline": "THE FERMI PARADOX IF",
+      "styleName": "CYBER_GLOW",
+      "filePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/272382/thumbnails/variant-A-thumb.svg",
+      "fileUrl": "/artifacts/media/jobs/272382/thumbnails/variant-A-thumb.svg",
+      "dimensions": {
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9"
+      },
+      "fileSizeBytes": 2524,
+      "contrastScore": 96.5,
+      "wordCountScore": 92,
+      "overallScore": 94.5,
+      "isPreferred": false,
+      "checksum": "177c17756e796d3b08e704ea5f698b08193fb99e6c3911bd3b1a857a7b4a6c17"
+    }
+  ],
+  "generatedAt": "2026-09-02T06:43:18.698Z"
+}

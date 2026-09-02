@@ -1,0 +1,93 @@
+{
+  "jobId": 505,
+  "topic": "Why Time Moves Faster As You Age",
+  "totalScenes": 2,
+  "totalDurationSec": 12,
+  "uniqueAssetsCount": 2,
+  "deduplicatedCount": 0,
+  "scenes": [
+    {
+      "sceneId": "scene-1",
+      "sceneNumber": 1,
+      "timing": {
+        "startSec": 0,
+        "endSec": 6,
+        "durationSec": 6
+      },
+      "narrationExcerpt": "",
+      "visualDirective": {
+        "description": "Dark ocean water abyss",
+        "type": "B_ROLL_VIDEO",
+        "transition": "SMOOTH_ZOOM",
+        "motionEffect": "SLOW_ZOOM_IN"
+      },
+      "asset": {
+        "assetId": "ast-505-scene-1-3efcbbf2",
+        "localFilePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/505/assets/scene-scene-1-visual.mp4",
+        "fileUrl": "/artifacts/media/jobs/505/assets/scene-scene-1-visual.mp4",
+        "source": "NASA_OPEN_MEDIA",
+        "license": {
+          "name": "NASA Public Domain / Creative Commons Zero",
+          "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "isCommercialPermitted": true,
+          "attributionRequired": false,
+          "author": "CurioSphere Visual Archives & NASA Media",
+          "sourceUrl": "https://images.nasa.gov"
+        },
+        "durationSec": 6,
+        "dimensions": {
+          "width": 1920,
+          "height": 1080,
+          "aspectRatio": "16:9"
+        },
+        "checksum": "3efcbbf2a4c1f763a12e6fd06fafe4163709e822a0f24acbbfd2731bae5c4245",
+        "fileSizeBytes": 76,
+        "visualType": "B_ROLL_VIDEO",
+        "isDeduplicated": false
+      },
+      "status": "DOWNLOADED"
+    },
+    {
+      "sceneId": "scene-2",
+      "sceneNumber": 2,
+      "timing": {
+        "startSec": 6,
+        "endSec": 12,
+        "durationSec": 6
+      },
+      "narrationExcerpt": "",
+      "visualDirective": {
+        "description": "Submarine in Mariana Trench",
+        "type": "AI_GENERATED_IMAGE",
+        "transition": "FADE_TO_BLACK",
+        "motionEffect": "SLOW_PAN_RIGHT"
+      },
+      "asset": {
+        "assetId": "ast-505-scene-2-8c714926",
+        "localFilePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/505/assets/scene-scene-2-visual.png",
+        "fileUrl": "/artifacts/media/jobs/505/assets/scene-scene-2-visual.png",
+        "source": "NASA_OPEN_MEDIA",
+        "license": {
+          "name": "NASA Public Domain / Creative Commons Zero",
+          "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "isCommercialPermitted": true,
+          "attributionRequired": false,
+          "author": "CurioSphere Visual Archives & NASA Media",
+          "sourceUrl": "https://images.nasa.gov"
+        },
+        "durationSec": 6,
+        "dimensions": {
+          "width": 1920,
+          "height": 1080,
+          "aspectRatio": "16:9"
+        },
+        "checksum": "8c7149269893b6e75a5165a217fc86b0ba4aa1871025fe0766d6d932b1399eba",
+        "fileSizeBytes": 88,
+        "visualType": "AI_GENERATED_IMAGE",
+        "isDeduplicated": false
+      },
+      "status": "DOWNLOADED"
+    }
+  ],
+  "generatedAt": "2026-09-02T07:02:27.937Z"
+}

@@ -6,6 +6,15 @@
   "scripts": {
     "hello": "tsx ./src/hello.ts",
     "seed": "tsx ./src/seed.ts",
+    "generate-test-script": "tsx ./src/generate-test-script.ts",
+    "generate-test-narration": "tsx ./src/generate-test-narration.ts",
+    "collect-test-visuals": "tsx ./src/collect-test-visuals.ts",
+    "generate-test-subtitles": "tsx ./src/generate-test-subtitles.ts",
+    "render-test-video": "tsx ./src/render-test-video.ts",
+    "generate-test-thumbnails": "tsx ./src/generate-test-thumbnails.ts",
+    "test-youtube-upload": "tsx ./src/test-youtube-upload.ts",
+    "generate-video": "tsx ./src/generate-video.ts",
+    "run-daily-production": "tsx ./src/run-daily-production.ts",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {

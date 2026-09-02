@@ -1,0 +1,24 @@
+{
+  "jobId": 696055,
+  "topic": "black holes",
+  "outputFilePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/696055/rendered/job-696055-1080p.mp4",
+  "fileSizeBytes": 114,
+  "durationSec": 92,
+  "resolution": "1920x1080",
+  "fps": 60,
+  "videoCodec": "H.264 (libx264)",
+  "audioCodec": "AAC (192kbps 48kHz stereo)",
+  "subtitlesBurned": true,
+  "bgmDuckingApplied": true,
+  "checksum": "2527293b16a3547912d55b42b66be6fcf422572769804fff2c44701970cc237c",
+  "templateUsed": "CURIOSPHERE_CINEMATIC",
+  "renderedAt": "2026-09-02T06:43:23.537Z",
+  "validation": {
+    "readable": true,
+    "durationValid": true,
+    "resolutionValid": true,
+    "audioPresent": true,
+    "fileSizeBytes": 114,
+    "checksum": "2527293b16a3547912d55b42b66be6fcf422572769804fff2c44701970cc237c"
+  }
+}

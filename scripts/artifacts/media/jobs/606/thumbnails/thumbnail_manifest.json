@@ -1,0 +1,64 @@
+{
+  "jobId": 606,
+  "topic": "Why Time Moves Faster As You Age",
+  "totalVariants": 3,
+  "preferredVariantId": "variant-A",
+  "preferredThumbnailUrl": "/artifacts/media/jobs/606/thumbnails/variant-A-thumb.svg",
+  "variants": [
+    {
+      "variantId": "variant-A",
+      "headline": "BOTTOMLESS ABYSS",
+      "styleName": "CYBER_GLOW",
+      "filePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/606/thumbnails/variant-A-thumb.svg",
+      "fileUrl": "/artifacts/media/jobs/606/thumbnails/variant-A-thumb.svg",
+      "dimensions": {
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9"
+      },
+      "fileSizeBytes": 2501,
+      "contrastScore": 96.5,
+      "wordCountScore": 100,
+      "overallScore": 98.1,
+      "isPreferred": true,
+      "checksum": "49a056c5a00541e3186b4f84ae26ebfb31c75a0b5be394772b715e94b61c567b"
+    },
+    {
+      "variantId": "variant-B",
+      "headline": "1000 ATM PRESSURE",
+      "styleName": "WARNING_ACCENT",
+      "filePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/606/thumbnails/variant-B-thumb.svg",
+      "fileUrl": "/artifacts/media/jobs/606/thumbnails/variant-B-thumb.svg",
+      "dimensions": {
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9"
+      },
+      "fileSizeBytes": 2495,
+      "contrastScore": 94,
+      "wordCountScore": 100,
+      "overallScore": 96.7,
+      "isPreferred": false,
+      "checksum": "dd911ac20699c163d4430897527f1626706e04645501e673f3d6d0214d27b126"
+    },
+    {
+      "variantId": "variant-C",
+      "headline": "EARTHS DEEPEST SECRET",
+      "styleName": "STAT_FOCUS",
+      "filePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/606/thumbnails/variant-C-thumb.svg",
+      "fileUrl": "/artifacts/media/jobs/606/thumbnails/variant-C-thumb.svg",
+      "dimensions": {
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9"
+      },
+      "fileSizeBytes": 2502,
+      "contrastScore": 91,
+      "wordCountScore": 100,
+      "overallScore": 95.1,
+      "isPreferred": false,
+      "checksum": "822217a8d55882a53487a12c530cea61d595909e5ef9ec75d0eda5a151294775"
+    }
+  ],
+  "generatedAt": "2026-09-02T07:02:40.258Z"
+}

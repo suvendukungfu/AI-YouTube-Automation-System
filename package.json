@@ -6,7 +6,16 @@
     "preinstall": "sh -c 'rm -f package-lock.json yarn.lock; case \"$npm_config_user_agent\" in pnpm/*) ;; *) echo \"Use pnpm instead\" >&2; exit 1 ;; esac'",
     "build": "pnpm run typecheck && pnpm -r --if-present run build",
     "typecheck:libs": "tsc --build",
-    "typecheck": "pnpm run typecheck:libs && pnpm -r --filter \"./artifacts/**\" --filter \"./scripts\" --if-present run typecheck"
+    "typecheck": "pnpm run typecheck:libs && pnpm -r --filter \"./artifacts/**\" --filter \"./scripts\" --if-present run typecheck",
+    "generate-test-script": "pnpm --filter @workspace/scripts run generate-test-script",
+    "generate-test-narration": "pnpm --filter @workspace/scripts run generate-test-narration",
+    "collect-test-visuals": "pnpm --filter @workspace/scripts run collect-test-visuals",
+    "generate-test-subtitles": "pnpm --filter @workspace/scripts run generate-test-subtitles",
+    "render-test-video": "pnpm --filter @workspace/scripts run render-test-video",
+    "generate-test-thumbnails": "pnpm --filter @workspace/scripts run generate-test-thumbnails",
+    "test-youtube-upload": "pnpm --filter @workspace/scripts run test-youtube-upload",
+    "generate-video": "pnpm --filter @workspace/scripts run generate-video",
+    "run-daily-production": "pnpm --filter @workspace/scripts run run-daily-production"
   },
   "private": true,
   "devDependencies": {

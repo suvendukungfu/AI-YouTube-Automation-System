@@ -1,0 +1,64 @@
+{
+  "jobId": 242342,
+  "topic": "quantum physics and do not upload",
+  "totalVariants": 3,
+  "preferredVariantId": "variant-B",
+  "preferredThumbnailUrl": "/artifacts/media/jobs/242342/thumbnails/variant-B-thumb.svg",
+  "variants": [
+    {
+      "variantId": "variant-B",
+      "headline": "1,000 ATMOSPHERES",
+      "styleName": "WARNING_ACCENT",
+      "filePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/242342/thumbnails/variant-B-thumb.svg",
+      "fileUrl": "/artifacts/media/jobs/242342/thumbnails/variant-B-thumb.svg",
+      "dimensions": {
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9"
+      },
+      "fileSizeBytes": 2496,
+      "contrastScore": 94,
+      "wordCountScore": 100,
+      "overallScore": 96.7,
+      "isPreferred": true,
+      "checksum": "dc4f79713caa2af72de2e84e91995d120123d246ddabc375f8dafcd2bb66c656"
+    },
+    {
+      "variantId": "variant-C",
+      "headline": "BOTTOMLESS ABYSS",
+      "styleName": "STAT_FOCUS",
+      "filePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/242342/thumbnails/variant-C-thumb.svg",
+      "fileUrl": "/artifacts/media/jobs/242342/thumbnails/variant-C-thumb.svg",
+      "dimensions": {
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9"
+      },
+      "fileSizeBytes": 2498,
+      "contrastScore": 91,
+      "wordCountScore": 100,
+      "overallScore": 95.1,
+      "isPreferred": false,
+      "checksum": "61c150374ef672661e6955d1686f1f0fb06dfdd3751d97b863361ee7e303dadd"
+    },
+    {
+      "variantId": "variant-A",
+      "headline": "QUANTUM PHYSICS AND DO",
+      "styleName": "CYBER_GLOW",
+      "filePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/242342/thumbnails/variant-A-thumb.svg",
+      "fileUrl": "/artifacts/media/jobs/242342/thumbnails/variant-A-thumb.svg",
+      "dimensions": {
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9"
+      },
+      "fileSizeBytes": 2508,
+      "contrastScore": 96.5,
+      "wordCountScore": 92,
+      "overallScore": 94.5,
+      "isPreferred": false,
+      "checksum": "de04ea3ab9c83b2a017ee493906a91cddc18e7caeffccffbe0e265567acf679c"
+    }
+  ],
+  "generatedAt": "2026-09-02T07:03:13.760Z"
+}

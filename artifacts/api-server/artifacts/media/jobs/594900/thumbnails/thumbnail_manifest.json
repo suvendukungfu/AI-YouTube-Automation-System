@@ -1,0 +1,64 @@
+{
+  "jobId": 594900,
+  "topic": "The Voynich Manuscript",
+  "totalVariants": 3,
+  "preferredVariantId": "variant-A",
+  "preferredThumbnailUrl": "/artifacts/media/jobs/594900/thumbnails/variant-A-thumb.svg",
+  "variants": [
+    {
+      "variantId": "variant-A",
+      "headline": "THE VOYNICH MANUSCRIPT",
+      "styleName": "CYBER_GLOW",
+      "filePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/artifacts/api-server/artifacts/media/jobs/594900/thumbnails/variant-A-thumb.svg",
+      "fileUrl": "/artifacts/media/jobs/594900/thumbnails/variant-A-thumb.svg",
+      "dimensions": {
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9"
+      },
+      "fileSizeBytes": 2497,
+      "contrastScore": 96.5,
+      "wordCountScore": 100,
+      "overallScore": 98.1,
+      "isPreferred": true,
+      "checksum": "76eb40b778117a7bcdee8d1ddb4c30d516c62cdc6689220a3f068d06ae0df4f2"
+    },
+    {
+      "variantId": "variant-B",
+      "headline": "1,000 ATMOSPHERES",
+      "styleName": "WARNING_ACCENT",
+      "filePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/artifacts/api-server/artifacts/media/jobs/594900/thumbnails/variant-B-thumb.svg",
+      "fileUrl": "/artifacts/media/jobs/594900/thumbnails/variant-B-thumb.svg",
+      "dimensions": {
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9"
+      },
+      "fileSizeBytes": 2485,
+      "contrastScore": 94,
+      "wordCountScore": 100,
+      "overallScore": 96.7,
+      "isPreferred": false,
+      "checksum": "462e6ae38eca9abc5b70afb0293fd3e9de53daa8455ea2c96cc3bb047e43c9cc"
+    },
+    {
+      "variantId": "variant-C",
+      "headline": "BOTTOMLESS ABYSS",
+      "styleName": "STAT_FOCUS",
+      "filePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/artifacts/api-server/artifacts/media/jobs/594900/thumbnails/variant-C-thumb.svg",
+      "fileUrl": "/artifacts/media/jobs/594900/thumbnails/variant-C-thumb.svg",
+      "dimensions": {
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9"
+      },
+      "fileSizeBytes": 2487,
+      "contrastScore": 91,
+      "wordCountScore": 100,
+      "overallScore": 95.1,
+      "isPreferred": false,
+      "checksum": "e0c5e3469fe89eb5a961686e15ac4cf8c549d054cda1549e49d1da3137e27a02"
+    }
+  ],
+  "generatedAt": "2026-09-02T07:15:23.530Z"
+}

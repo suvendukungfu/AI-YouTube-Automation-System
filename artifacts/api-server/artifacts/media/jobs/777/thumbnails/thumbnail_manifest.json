@@ -1,0 +1,64 @@
+{
+  "jobId": 777,
+  "topic": "The Mariana Trench",
+  "totalVariants": 3,
+  "preferredVariantId": "variant-A",
+  "preferredThumbnailUrl": "/artifacts/media/jobs/777/thumbnails/variant-A-thumb.svg",
+  "variants": [
+    {
+      "variantId": "variant-A",
+      "headline": "BOTTOMLESS ABYSS",
+      "styleName": "CYBER_GLOW",
+      "filePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/artifacts/api-server/artifacts/media/jobs/777/thumbnails/variant-A-thumb.svg",
+      "fileUrl": "/artifacts/media/jobs/777/thumbnails/variant-A-thumb.svg",
+      "dimensions": {
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9"
+      },
+      "fileSizeBytes": 2487,
+      "contrastScore": 96.5,
+      "wordCountScore": 100,
+      "overallScore": 98.1,
+      "isPreferred": true,
+      "checksum": "68d09d3ceb6e65314388959ba787b6a3bb7d0b8fba15fa5b9340ebd6abf00e41"
+    },
+    {
+      "variantId": "variant-B",
+      "headline": "1000 ATM PRESSURE",
+      "styleName": "WARNING_ACCENT",
+      "filePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/artifacts/api-server/artifacts/media/jobs/777/thumbnails/variant-B-thumb.svg",
+      "fileUrl": "/artifacts/media/jobs/777/thumbnails/variant-B-thumb.svg",
+      "dimensions": {
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9"
+      },
+      "fileSizeBytes": 2481,
+      "contrastScore": 94,
+      "wordCountScore": 100,
+      "overallScore": 96.7,
+      "isPreferred": false,
+      "checksum": "0b0623b5393c3c357c299734c720cb0f0aa3fe9776a368646cd55840ae3aeee0"
+    },
+    {
+      "variantId": "variant-C",
+      "headline": "EARTHS SECRET",
+      "styleName": "STAT_FOCUS",
+      "filePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/artifacts/api-server/artifacts/media/jobs/777/thumbnails/variant-C-thumb.svg",
+      "fileUrl": "/artifacts/media/jobs/777/thumbnails/variant-C-thumb.svg",
+      "dimensions": {
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9"
+      },
+      "fileSizeBytes": 2480,
+      "contrastScore": 91,
+      "wordCountScore": 100,
+      "overallScore": 95.1,
+      "isPreferred": false,
+      "checksum": "41126509a741a9328c5f7c37d486854b76fffeb6de8b9ccb1b834b342cae72ea"
+    }
+  ],
+  "generatedAt": "2026-09-02T07:15:22.344Z"
+}

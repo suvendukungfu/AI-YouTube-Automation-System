@@ -1,0 +1,179 @@
+{
+  "jobId": 101,
+  "topic": "Why Time Moves Faster As You Age",
+  "totalScenes": 4,
+  "totalDurationSec": 180,
+  "uniqueAssetsCount": 4,
+  "deduplicatedCount": 0,
+  "scenes": [
+    {
+      "sceneId": "scene-1",
+      "sceneNumber": 1,
+      "timing": {
+        "startSec": 0,
+        "endSec": 35,
+        "durationSec": 35
+      },
+      "narrationExcerpt": "As you leave the sunlit surface, light disappears entirely within two hundred meters.",
+      "visualDirective": {
+        "description": "Cinematic shot of ocean water fading from brilliant sunlight into absolute obsidian black abyss, 8k, volumetric light beams dissipating.",
+        "type": "B_ROLL_VIDEO",
+        "transition": "SMOOTH_ZOOM",
+        "motionEffect": "SLOW_ZOOM_IN",
+        "onScreenText": "DEPTH: 200m - THE TWILIGHT ZONE"
+      },
+      "asset": {
+        "assetId": "ast-101-scene-1-42fde842",
+        "localFilePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/101/assets/scene-scene-1-visual.mp4",
+        "fileUrl": "/artifacts/media/jobs/101/assets/scene-scene-1-visual.mp4",
+        "source": "NASA_OPEN_MEDIA",
+        "license": {
+          "name": "NASA Public Domain / Creative Commons Zero",
+          "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "isCommercialPermitted": true,
+          "attributionRequired": false,
+          "author": "CurioSphere Visual Archives & NASA Media",
+          "sourceUrl": "https://images.nasa.gov"
+        },
+        "durationSec": 35,
+        "dimensions": {
+          "width": 1920,
+          "height": 1080,
+          "aspectRatio": "16:9"
+        },
+        "checksum": "42fde842cbfd27a53d8d4aad5fe944a22e5b135d7885b9bb34577f8b6ca5745e",
+        "fileSizeBytes": 87,
+        "visualType": "B_ROLL_VIDEO",
+        "isDeduplicated": false
+      },
+      "status": "DOWNLOADED"
+    },
+    {
+      "sceneId": "scene-2",
+      "sceneNumber": 2,
+      "timing": {
+        "startSec": 35,
+        "endSec": 87,
+        "durationSec": 52
+      },
+      "narrationExcerpt": "At eleven thousand meters down, the water pressure reaches over one thousand times atmospheric press",
+      "visualDirective": {
+        "description": "3D cross-section diagram of bathymetric depth vectors showing pressure crushing forces at 11,000 meters.",
+        "type": "AI_GENERATED_IMAGE",
+        "transition": "CROSS_DISSOLVE",
+        "motionEffect": "SLOW_PAN_RIGHT",
+        "onScreenText": "PRESSURE: 1,086 ATM"
+      },
+      "asset": {
+        "assetId": "ast-101-scene-2-1c5c0123",
+        "localFilePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/101/assets/scene-scene-2-visual.png",
+        "fileUrl": "/artifacts/media/jobs/101/assets/scene-scene-2-visual.png",
+        "source": "NASA_OPEN_MEDIA",
+        "license": {
+          "name": "NASA Public Domain / Creative Commons Zero",
+          "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "isCommercialPermitted": true,
+          "attributionRequired": false,
+          "author": "CurioSphere Visual Archives & NASA Media",
+          "sourceUrl": "https://images.nasa.gov"
+        },
+        "durationSec": 52,
+        "dimensions": {
+          "width": 1920,
+          "height": 1080,
+          "aspectRatio": "16:9"
+        },
+        "checksum": "1c5c012304dcc4675c925fad26507d546a963679f52cf537542023900d99186e",
+        "fileSizeBytes": 88,
+        "visualType": "AI_GENERATED_IMAGE",
+        "isDeduplicated": false
+      },
+      "status": "DOWNLOADED"
+    },
+    {
+      "sceneId": "scene-3",
+      "sceneNumber": 3,
+      "timing": {
+        "startSec": 87,
+        "endSec": 139,
+        "durationSec": 52
+      },
+      "narrationExcerpt": "Near the seabed, hydrothermal chimneys spew mineral-rich water heated to four hundred degrees Celsiu",
+      "visualDirective": {
+        "description": "Submersible headlights illuminating active black smoker hydrothermal chimneys with billowing iridescent chemical clouds.",
+        "type": "B_ROLL_VIDEO",
+        "transition": "WHIP_PAN",
+        "motionEffect": "DYNAMIC_TILT",
+        "onScreenText": "HYDROTHERMAL VENTS: 400°C"
+      },
+      "asset": {
+        "assetId": "ast-101-scene-3-c93174fb",
+        "localFilePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/101/assets/scene-scene-3-visual.mp4",
+        "fileUrl": "/artifacts/media/jobs/101/assets/scene-scene-3-visual.mp4",
+        "source": "NASA_OPEN_MEDIA",
+        "license": {
+          "name": "NASA Public Domain / Creative Commons Zero",
+          "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "isCommercialPermitted": true,
+          "attributionRequired": false,
+          "author": "CurioSphere Visual Archives & NASA Media",
+          "sourceUrl": "https://images.nasa.gov"
+        },
+        "durationSec": 52,
+        "dimensions": {
+          "width": 1920,
+          "height": 1080,
+          "aspectRatio": "16:9"
+        },
+        "checksum": "c93174fbcbfaacf19dccb86f96a79b5363c6cb066e4b2937370db8b4663d6860",
+        "fileSizeBytes": 83,
+        "visualType": "B_ROLL_VIDEO",
+        "isDeduplicated": false
+      },
+      "status": "DOWNLOADED"
+    },
+    {
+      "sceneId": "scene-4",
+      "sceneNumber": 4,
+      "timing": {
+        "startSec": 139,
+        "endSec": 180,
+        "durationSec": 41
+      },
+      "narrationExcerpt": "We have mapped more of the surface of Mars than we have mapped of our own ocean trenches.",
+      "visualDirective": {
+        "description": "Split screen comparing topographic relief maps of Mars versus unexplored blue bathymetric contours of Earth's trenches.",
+        "type": "AI_GENERATED_IMAGE",
+        "transition": "FADE_TO_BLACK",
+        "motionEffect": "PARALLAX_FLOAT",
+        "onScreenText": "UNEXPLORED PLANET"
+      },
+      "asset": {
+        "assetId": "ast-101-scene-4-abb9644e",
+        "localFilePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/101/assets/scene-scene-4-visual.png",
+        "fileUrl": "/artifacts/media/jobs/101/assets/scene-scene-4-visual.png",
+        "source": "NASA_OPEN_MEDIA",
+        "license": {
+          "name": "NASA Public Domain / Creative Commons Zero",
+          "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "isCommercialPermitted": true,
+          "attributionRequired": false,
+          "author": "CurioSphere Visual Archives & NASA Media",
+          "sourceUrl": "https://images.nasa.gov"
+        },
+        "durationSec": 41,
+        "dimensions": {
+          "width": 1920,
+          "height": 1080,
+          "aspectRatio": "16:9"
+        },
+        "checksum": "abb9644e6d4c8e04026435b129abaeda64f272630f5fafdacce013b01449d790",
+        "fileSizeBytes": 85,
+        "visualType": "AI_GENERATED_IMAGE",
+        "isDeduplicated": false
+      },
+      "status": "DOWNLOADED"
+    }
+  ],
+  "generatedAt": "2026-09-02T07:02:06.032Z"
+}

@@ -1,0 +1,175 @@
+{
+  "jobId": 177259,
+  "topic": "The Fermi Paradox: If Aliens Exist, Where Are They?",
+  "totalScenes": 4,
+  "totalDurationSec": 108,
+  "uniqueAssetsCount": 4,
+  "deduplicatedCount": 0,
+  "scenes": [
+    {
+      "sceneId": "scene-1",
+      "sceneNumber": 1,
+      "timing": {
+        "startSec": 0,
+        "endSec": 21,
+        "durationSec": 21
+      },
+      "narrationExcerpt": "As you leave the sunlit surface, light disappears entirely within two hundred meters. Below that lie",
+      "visualDirective": {
+        "description": "Camera begins at sunlit turquoise ocean surface and rapidly plunges into progressively darker deep blue and inky black voids.",
+        "type": "B_ROLL_VIDEO",
+        "transition": "SMOOTH_ZOOM",
+        "motionEffect": "SLOW_ZOOM_IN"
+      },
+      "asset": {
+        "assetId": "ast-177259-scene-1-bb462647",
+        "localFilePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/177259/assets/scene-scene-1-visual.mp4",
+        "fileUrl": "/artifacts/media/jobs/177259/assets/scene-scene-1-visual.mp4",
+        "source": "NASA_OPEN_MEDIA",
+        "license": {
+          "name": "NASA Public Domain / Creative Commons Zero",
+          "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "isCommercialPermitted": true,
+          "attributionRequired": false,
+          "author": "CurioSphere Visual Archives & NASA Media",
+          "sourceUrl": "https://images.nasa.gov"
+        },
+        "durationSec": 21,
+        "dimensions": {
+          "width": 1920,
+          "height": 1080,
+          "aspectRatio": "16:9"
+        },
+        "checksum": "bb462647a99e34c27970b66b59e2e2a45052bca28d0e41a1b15e7523220e64f4",
+        "fileSizeBytes": 91,
+        "visualType": "B_ROLL_VIDEO",
+        "isDeduplicated": false
+      },
+      "status": "DOWNLOADED"
+    },
+    {
+      "sceneId": "scene-2",
+      "sceneNumber": 2,
+      "timing": {
+        "startSec": 21,
+        "endSec": 52,
+        "durationSec": 31
+      },
+      "narrationExcerpt": "At eleven thousand meters down, the water pressure reaches over one thousand times atmospheric press",
+      "visualDirective": {
+        "description": "Macro 3D simulation of molecular piezolyte stabilization inside a hadal snailfish, contrasted with crushing bathymetric pressure vectors.",
+        "type": "AI_GENERATED_IMAGE",
+        "transition": "CROSS_DISSOLVE",
+        "motionEffect": "SLOW_PAN_RIGHT"
+      },
+      "asset": {
+        "assetId": "ast-177259-scene-2-ab061ac5",
+        "localFilePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/177259/assets/scene-scene-2-visual.png",
+        "fileUrl": "/artifacts/media/jobs/177259/assets/scene-scene-2-visual.png",
+        "source": "NASA_OPEN_MEDIA",
+        "license": {
+          "name": "NASA Public Domain / Creative Commons Zero",
+          "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "isCommercialPermitted": true,
+          "attributionRequired": false,
+          "author": "CurioSphere Visual Archives & NASA Media",
+          "sourceUrl": "https://images.nasa.gov"
+        },
+        "durationSec": 31,
+        "dimensions": {
+          "width": 1920,
+          "height": 1080,
+          "aspectRatio": "16:9"
+        },
+        "checksum": "ab061ac5ad8b23edf7d475aff421b9206a6b19ac298dbf5215e15ada2b82b5a7",
+        "fileSizeBytes": 103,
+        "visualType": "AI_GENERATED_IMAGE",
+        "isDeduplicated": false
+      },
+      "status": "DOWNLOADED"
+    },
+    {
+      "sceneId": "scene-3",
+      "sceneNumber": 3,
+      "timing": {
+        "startSec": 52,
+        "endSec": 83,
+        "durationSec": 31
+      },
+      "narrationExcerpt": "Near the seabed, hydrothermal chimneys spew mineral-rich water heated to four hundred degrees Celsiu",
+      "visualDirective": {
+        "description": "Eerie high-contrast underwater ROV headlights illuminating black smoker chimneys with billowing iridescent chemical clouds.",
+        "type": "B_ROLL_VIDEO",
+        "transition": "CROSS_DISSOLVE",
+        "motionEffect": "DYNAMIC_TILT"
+      },
+      "asset": {
+        "assetId": "ast-177259-scene-3-b660a363",
+        "localFilePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/177259/assets/scene-scene-3-visual.mp4",
+        "fileUrl": "/artifacts/media/jobs/177259/assets/scene-scene-3-visual.mp4",
+        "source": "NASA_OPEN_MEDIA",
+        "license": {
+          "name": "NASA Public Domain / Creative Commons Zero",
+          "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "isCommercialPermitted": true,
+          "attributionRequired": false,
+          "author": "CurioSphere Visual Archives & NASA Media",
+          "sourceUrl": "https://images.nasa.gov"
+        },
+        "durationSec": 31,
+        "dimensions": {
+          "width": 1920,
+          "height": 1080,
+          "aspectRatio": "16:9"
+        },
+        "checksum": "b660a363b23c85e9eaf46430f9ee06e8ad0d51b029b5acca3ae7101d8550e0dc",
+        "fileSizeBytes": 104,
+        "visualType": "B_ROLL_VIDEO",
+        "isDeduplicated": false
+      },
+      "status": "DOWNLOADED"
+    },
+    {
+      "sceneId": "scene-4",
+      "sceneNumber": 4,
+      "timing": {
+        "startSec": 83,
+        "endSec": 108,
+        "durationSec": 25
+      },
+      "narrationExcerpt": "We have mapped more of the surface of Mars than we have mapped of our own ocean trenches. Every expe",
+      "visualDirective": {
+        "description": "3D planetary globe rotating from satellite orbital views down into glowing translucent hadal bathymetry lines.",
+        "type": "AI_GENERATED_IMAGE",
+        "transition": "FADE_TO_BLACK",
+        "motionEffect": "PARALLAX_FLOAT"
+      },
+      "asset": {
+        "assetId": "ast-177259-scene-4-3810ca31",
+        "localFilePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/177259/assets/scene-scene-4-visual.png",
+        "fileUrl": "/artifacts/media/jobs/177259/assets/scene-scene-4-visual.png",
+        "source": "NASA_OPEN_MEDIA",
+        "license": {
+          "name": "NASA Public Domain / Creative Commons Zero",
+          "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "isCommercialPermitted": true,
+          "attributionRequired": false,
+          "author": "CurioSphere Visual Archives & NASA Media",
+          "sourceUrl": "https://images.nasa.gov"
+        },
+        "durationSec": 25,
+        "dimensions": {
+          "width": 1920,
+          "height": 1080,
+          "aspectRatio": "16:9"
+        },
+        "checksum": "3810ca314e1c735a51400359dc512fba226fba60ef5452f87c4d377e13ffac98",
+        "fileSizeBytes": 92,
+        "visualType": "AI_GENERATED_IMAGE",
+        "isDeduplicated": false
+      },
+      "status": "DOWNLOADED"
+    }
+  ],
+  "generatedAt": "2026-09-02T07:03:01.755Z"
+}

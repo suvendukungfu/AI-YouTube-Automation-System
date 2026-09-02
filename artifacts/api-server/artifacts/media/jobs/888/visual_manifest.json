@@ -1,0 +1,93 @@
+{
+  "jobId": 888,
+  "topic": "The Mariana Trench",
+  "totalScenes": 2,
+  "totalDurationSec": 60,
+  "uniqueAssetsCount": 1,
+  "deduplicatedCount": 1,
+  "scenes": [
+    {
+      "sceneId": "scene-1",
+      "sceneNumber": 1,
+      "timing": {
+        "startSec": 0,
+        "endSec": 30,
+        "durationSec": 30
+      },
+      "narrationExcerpt": "Light disappears at 200m.",
+      "visualDirective": {
+        "description": "Deep ocean water fading to dark abyss",
+        "type": "B_ROLL_VIDEO",
+        "transition": "SMOOTH_ZOOM",
+        "motionEffect": "SLOW_ZOOM_IN"
+      },
+      "asset": {
+        "assetId": "ast-888-scene-1-3824271f",
+        "localFilePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/artifacts/api-server/artifacts/media/jobs/888/assets/scene-scene-1-visual.mp4",
+        "fileUrl": "/artifacts/media/jobs/888/assets/scene-scene-1-visual.mp4",
+        "source": "NASA_OPEN_MEDIA",
+        "license": {
+          "name": "NASA Public Domain / Creative Commons Zero",
+          "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "isCommercialPermitted": true,
+          "attributionRequired": false,
+          "author": "CurioSphere Visual Archives & NASA Media",
+          "sourceUrl": "https://images.nasa.gov"
+        },
+        "durationSec": 30,
+        "dimensions": {
+          "width": 1920,
+          "height": 1080,
+          "aspectRatio": "16:9"
+        },
+        "checksum": "3824271fbf6d84c39844cf81a02da06b02a7ce4b3aea04ccc33f3225aaa449c8",
+        "fileSizeBytes": 91,
+        "visualType": "B_ROLL_VIDEO",
+        "isDeduplicated": false
+      },
+      "status": "DOWNLOADED"
+    },
+    {
+      "sceneId": "scene-2",
+      "sceneNumber": 2,
+      "timing": {
+        "startSec": 30,
+        "endSec": 60,
+        "durationSec": 30
+      },
+      "narrationExcerpt": "Repeated visual test.",
+      "visualDirective": {
+        "description": "Deep ocean water fading to dark abyss",
+        "type": "B_ROLL_VIDEO",
+        "transition": "FADE_TO_BLACK",
+        "motionEffect": "SLOW_PAN_RIGHT"
+      },
+      "asset": {
+        "assetId": "ast-888-scene-2-3824271f",
+        "localFilePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/artifacts/api-server/artifacts/media/jobs/888/assets/scene-scene-2-visual.mp4",
+        "fileUrl": "/artifacts/media/jobs/888/assets/scene-scene-2-visual.mp4",
+        "source": "NASA_OPEN_MEDIA",
+        "license": {
+          "name": "NASA Public Domain / Creative Commons Zero",
+          "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "isCommercialPermitted": true,
+          "attributionRequired": false,
+          "author": "CurioSphere Visual Archives & NASA Media",
+          "sourceUrl": "https://images.nasa.gov"
+        },
+        "durationSec": 30,
+        "dimensions": {
+          "width": 1920,
+          "height": 1080,
+          "aspectRatio": "16:9"
+        },
+        "checksum": "3824271fbf6d84c39844cf81a02da06b02a7ce4b3aea04ccc33f3225aaa449c8",
+        "fileSizeBytes": 91,
+        "visualType": "B_ROLL_VIDEO",
+        "isDeduplicated": true
+      },
+      "status": "DOWNLOADED"
+    }
+  ],
+  "generatedAt": "2026-09-02T07:15:22.627Z"
+}

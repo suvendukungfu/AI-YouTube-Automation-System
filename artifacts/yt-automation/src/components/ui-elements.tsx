@@ -42,12 +42,13 @@ export const Button = forwardRef<HTMLButtonElement, React.ButtonHTMLAttributes<H
 );
 Button.displayName = "Button";
 
-export const Badge = ({ children, variant = 'default', className }: { children: React.ReactNode, variant?: 'default' | 'success' | 'warning' | 'info', className?: string }) => {
+export const Badge = ({ children, variant = 'default', className }: { children: React.ReactNode, variant?: 'default' | 'success' | 'warning' | 'info' | 'destructive', className?: string }) => {
   const variants = {
     default: "bg-white/10 text-white/80 border-white/10",
     success: "bg-primary/10 text-primary border-primary/20",
     warning: "bg-yellow-500/10 text-yellow-500 border-yellow-500/20",
     info: "bg-accent/10 text-accent border-accent/20",
+    destructive: "bg-destructive/10 text-destructive border-destructive/20",
   };
   return (
     <span className={cn("px-2.5 py-0.5 rounded-full text-xs font-medium border", variants[variant], className)}>

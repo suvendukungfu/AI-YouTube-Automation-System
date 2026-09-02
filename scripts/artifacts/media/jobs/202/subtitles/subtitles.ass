@@ -1,0 +1,35 @@
+[Script Info]
+Title: Job #202 Subtitles
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: CurioSphereMain,Montserrat,58,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,3.5,2.0,2,40,40,90,1
+Style: CurioSphereAccent,Montserrat,58,&H0000FFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4.0,2.5,2,40,40,90,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.98,CurioSphereMain,,0,0,0,,If you placed Mount Everest at the
+Dialogue: 0,0:00:03.03,0:00:05.28,CurioSphereMain,,0,0,0,,bottom of the Mariana Trench,
+Dialogue: 0,0:00:05.33,0:00:08.31,CurioSphereMain,,0,0,0,,its highest peak would still be submerged
+Dialogue: 0,0:00:08.36,0:00:11.60,CurioSphereMain,,0,0,0,,under more than two kilometers of water.
+Dialogue: 0,0:00:11.65,0:00:13.18,CurioSphereMain,,0,0,0,,Welcome to CurioSphere.
+Dialogue: 0,0:00:13.23,0:00:16.34,CurioSphereMain,,0,0,0,,Today, we descend into the deepest geological
+Dialogue: 0,0:00:16.39,0:00:17.92,CurioSphereMain,,0,0,0,,fracture on Earth.
+Dialogue: 0,0:00:17.97,0:00:20.66,CurioSphereMain,,0,0,0,,As you leave the sunlit surface,
+Dialogue: 0,0:00:20.71,0:00:23.94,CurioSphereMain,,0,0,0,,light disappears entirely within two hundred meters.
+Dialogue: 0,0:00:23.99,0:00:26.25,CurioSphereMain,,0,0,0,,At eleven thousand meters down,
+Dialogue: 0,0:00:26.30,0:00:29.54,CurioSphereMain,,0,0,0,,the water pressure exceeds one thousand atmospheres.
+Dialogue: 0,0:00:29.59,0:00:32.57,CurioSphereMain,,0,0,0,,That is equivalent to having the weight
+Dialogue: 0,0:00:32.62,0:00:35.60,CurioSphereMain,,0,0,0,,of fifty jumbo jets pressing against your
+Dialogue: 0,0:00:35.65,0:00:36.65,CurioSphereMain,,0,0,0,,chest.
+Dialogue: 0,0:00:36.70,0:00:39.64,CurioSphereMain,,0,0,0,,Yet, life thrives in the abyss.
+Dialogue: 0,0:00:39.69,0:00:42.67,CurioSphereMain,,0,0,0,,Specialized organisms produce piezolytes to prevent their
+Dialogue: 0,0:00:42.72,0:00:44.67,CurioSphereMain,,0,0,0,,cellular membranes from solidifying.
+Dialogue: 0,0:00:44.72,0:00:47.71,CurioSphereMain,,0,0,0,,We have mapped more of Mars than
+Dialogue: 0,0:00:47.76,0:00:48.50,CurioSphereMain,,0,0,0,,our own ocean trenches.

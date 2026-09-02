@@ -1,0 +1,64 @@
+{
+  "jobId": 701833,
+  "topic": "black holes",
+  "totalVariants": 3,
+  "preferredVariantId": "variant-A",
+  "preferredThumbnailUrl": "/artifacts/media/jobs/701833/thumbnails/variant-A-thumb.svg",
+  "variants": [
+    {
+      "variantId": "variant-A",
+      "headline": "BLACK HOLES",
+      "styleName": "CYBER_GLOW",
+      "filePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/701833/thumbnails/variant-A-thumb.svg",
+      "fileUrl": "/artifacts/media/jobs/701833/thumbnails/variant-A-thumb.svg",
+      "dimensions": {
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9"
+      },
+      "fileSizeBytes": 2475,
+      "contrastScore": 96.5,
+      "wordCountScore": 100,
+      "overallScore": 98.1,
+      "isPreferred": true,
+      "checksum": "f5d43cd5b398bbb809098d2a9f63a30bd59958c0aa6beb9a61c048071492c96b"
+    },
+    {
+      "variantId": "variant-B",
+      "headline": "1,000 ATMOSPHERES",
+      "styleName": "WARNING_ACCENT",
+      "filePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/701833/thumbnails/variant-B-thumb.svg",
+      "fileUrl": "/artifacts/media/jobs/701833/thumbnails/variant-B-thumb.svg",
+      "dimensions": {
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9"
+      },
+      "fileSizeBytes": 2474,
+      "contrastScore": 94,
+      "wordCountScore": 100,
+      "overallScore": 96.7,
+      "isPreferred": false,
+      "checksum": "0824732677a6351aef66877a7a487af594e40d056fe18021cf9343eb9badb307"
+    },
+    {
+      "variantId": "variant-C",
+      "headline": "BOTTOMLESS ABYSS",
+      "styleName": "STAT_FOCUS",
+      "filePath": "/Users/suvendusahoo/Downloads/youtube /AI-YouTube-Automation-System/scripts/artifacts/media/jobs/701833/thumbnails/variant-C-thumb.svg",
+      "fileUrl": "/artifacts/media/jobs/701833/thumbnails/variant-C-thumb.svg",
+      "dimensions": {
+        "width": 1280,
+        "height": 720,
+        "aspectRatio": "16:9"
+      },
+      "fileSizeBytes": 2476,
+      "contrastScore": 91,
+      "wordCountScore": 100,
+      "overallScore": 95.1,
+      "isPreferred": false,
+      "checksum": "76bab5f1ec55872522be504b4ad988d9fb6bdc89e44d38d2816ca3e87a7f9819"
+    }
+  ],
+  "generatedAt": "2026-09-02T07:03:08.598Z"
+}

@@ -27,7 +27,10 @@ router.post("/channels", async (req, res) => {
 router.get("/channels/:id", async (req, res) => {
   const id = parseInt(req.params.id);
   const [channel] = await db.select().from(channelsTable).where(eq(channelsTable.id, id));
-  if (!channel) return res.status(404).json({ error: "Not found" });
+  if (!channel) {
+    res.status(404).json({ error: "Not found" });
+    return;
+  }
   const data = GetChannelResponse.parse({ ...channel, createdAt: channel.createdAt.toISOString() });
   res.json(data);
 });

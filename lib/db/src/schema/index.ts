@@ -3,3 +3,5 @@ export * from "./videos";
 export * from "./niches";
 export * from "./schedule";
 export * from "./earnings";
+export * from "./jobs";
+

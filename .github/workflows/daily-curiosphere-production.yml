@@ -1,0 +1,61 @@
+name: Daily CurioSphere Video Production
+
+on:
+  schedule:
+    # Runs daily at 00:00 UTC (modify as needed for channel timezone)
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Run in Dry-Run simulation mode (no uploads)'
+        required: false
+        default: false
+        type: boolean
+      custom_topic:
+        description: 'Optional custom topic override'
+        required: false
+        type: string
+
+jobs:
+  produce-daily-video:
+    name: Generate & Publish Daily CurioSphere Video
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Execute Daily Video Production
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          OLLAMA_BASE_URL: ${{ secrets.OLLAMA_BASE_URL }}
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            pnpm run run-daily-production --dry-run
+          elif [ -n "${{ inputs.custom_topic }}" ]; then
+            pnpm run run-daily-production --topic "${{ inputs.custom_topic }}"
+          else
+            pnpm run run-daily-production
+          fi

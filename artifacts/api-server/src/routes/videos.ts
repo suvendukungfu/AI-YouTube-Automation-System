@@ -50,7 +50,10 @@ router.post("/videos", async (req, res) => {
 router.get("/videos/:id", async (req, res) => {
   const id = parseInt(req.params.id);
   const [video] = await db.select().from(videosTable).where(eq(videosTable.id, id));
-  if (!video) return res.status(404).json({ error: "Not found" });
+  if (!video) {
+    res.status(404).json({ error: "Not found" });
+    return;
+  }
   const data = GetVideoResponse.parse(formatVideo(video));
   res.json(data);
 });

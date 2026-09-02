@@ -37,13 +37,15 @@ export default function Dashboard() {
     views: Math.floor(Math.random() * 100000),
   }));
 
+  const progressPercent = e.progressPercent ?? (e.targetDaily && e.todayEarnings ? (e.todayEarnings / e.targetDaily) * 100 : 0);
+
   return (
     <Layout>
       {/* Background decoration */}
       <img 
         src={`${import.meta.env.BASE_URL}images/hero-bg.png`} 
         alt="Hero Background" 
-        className="absolute inset-0 w-full h-[500px] object-cover opacity-30 pointer-events-none -z-10 mix-blend-screen mask-image-linear-gradient"
+        className="absolute inset-0 w-full h-125 object-cover opacity-30 pointer-events-none -z-10 mix-blend-screen mask-image-linear-gradient"
         style={{ WebkitMaskImage: 'linear-gradient(to bottom, black 0%, transparent 100%)' }}
       />
 
@@ -52,7 +54,7 @@ export default function Dashboard() {
           ₹50,000/Day <span className="text-gradient-primary">Automation Engine</span>
         </h1>
         <p className="text-muted-foreground text-lg max-w-2xl">
-          Your AI pipeline is actively generating content. You are currently earning <strong className="text-white">{formatCurrency(e.todayEarnings)}</strong> today.
+          Your AI pipeline is actively generating content. You are currently earning <strong className="text-white">{formatCurrency(e.todayEarnings || 0)}</strong> today.
         </p>
       </div>
 
@@ -64,22 +66,22 @@ export default function Dashboard() {
               <Target className="w-6 h-6 text-primary" />
               <h3 className="text-xl font-semibold text-white">Daily Target Progress</h3>
             </div>
-            <p className="text-muted-foreground">Automated revenue goal: {formatCurrency(e.targetDaily)} / day</p>
+            <p className="text-muted-foreground">Automated revenue goal: {formatCurrency(e.targetDaily || 50000)} / day</p>
           </div>
           <div className="text-right">
             <div className="text-4xl font-display font-bold text-primary shadow-primary/20 drop-shadow-lg">
-              {formatCurrency(e.todayEarnings)}
+              {formatCurrency(e.todayEarnings || 0)}
             </div>
             <p className="text-sm font-medium text-emerald-400/80 mt-1 flex items-center justify-end gap-1">
-              <ArrowUpRight className="w-4 h-4" /> {e.progressPercent.toFixed(1)}% of target
+              <ArrowUpRight className="w-4 h-4" /> {Number(progressPercent || 0).toFixed(1)}% of target
             </p>
           </div>
         </div>
         
         <div className="relative h-4 bg-background/50 rounded-full overflow-hidden border border-white/5">
           <div 
-            className="absolute top-0 left-0 h-full bg-gradient-to-r from-emerald-500 to-primary rounded-full transition-all duration-1000 ease-out shadow-[0_0_15px_rgba(16,185,129,0.5)]"
-            style={{ width: `${Math.min(e.progressPercent, 100)}%` }}
+            className="absolute top-0 left-0 h-full bg-linear-to-r from-emerald-500 to-primary rounded-full transition-all duration-1000 ease-out shadow-[0_0_15px_rgba(16,185,129,0.5)]"
+            style={{ width: `${Math.min(Number(progressPercent || 0), 100)}%` }}
           />
         </div>
       </Card>
@@ -113,7 +115,7 @@ export default function Dashboard() {
           </div>
           <Button variant="outline" size="sm">Download Report</Button>
         </div>
-        <div className="h-[300px] w-full">
+        <div className="h-75 w-full">
           <ResponsiveContainer width="100%" height="100%">
             <AreaChart data={chartData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
               <defs>

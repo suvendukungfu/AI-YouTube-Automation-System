@@ -1,3 +1,7 @@
+try {
+  process.loadEnvFile?.();
+} catch {}
+
 import { db } from "@workspace/db";
 import {
   channelsTable,
@@ -5,11 +9,15 @@ import {
   nichesTable,
   scheduleTable,
   dailyEarningsTable,
+  productionJobsTable,
+  jobLogsTable,
 } from "@workspace/db/schema";
 
 async function seed() {
   console.log("Seeding database...");
 
+  await db.delete(jobLogsTable);
+  await db.delete(productionJobsTable);
   await db.delete(scheduleTable);
   await db.delete(videosTable);
   await db.delete(channelsTable);
@@ -286,7 +294,132 @@ async function seed() {
   }
   await db.insert(dailyEarningsTable).values(dailyData);
 
-  console.log("Seed complete!");
+  // Seed sample CurioSphere Production Jobs
+  const [job1] = await db.insert(productionJobsTable).values({
+    idempotencyKey: "seed_curiosphere_job_1",
+    channelId: ch2.id,
+    title: "The Physics of Why Time Moves Faster As You Age",
+    topic: "Subjective Time Acceleration",
+    targetDurationSeconds: 180,
+    status: "READY_TO_UPLOAD",
+    currentStage: "READY_TO_UPLOAD",
+    progressPercent: 100,
+    stageTimestamps: {
+      IDEA: new Date(now.getTime() - 2 * day).toISOString(),
+      RESEARCHED: new Date(now.getTime() - 1.8 * day).toISOString(),
+      SCRIPT_READY: new Date(now.getTime() - 1.5 * day).toISOString(),
+      VOICE_READY: new Date(now.getTime() - 1.2 * day).toISOString(),
+      ASSETS_READY: new Date(now.getTime() - 0.9 * day).toISOString(),
+      RENDERED: new Date(now.getTime() - 0.5 * day).toISOString(),
+      READY_TO_UPLOAD: new Date(now.getTime() - 0.2 * day).toISOString(),
+    },
+    researchData: {
+      overview: "Explores the cognitive proportionality theory and dopamine clock deceleration with age.",
+      facts: [
+        "A year to a 10-year-old is 10% of their life; to a 50-year-old it is only 2%.",
+        "Neural image processing frequency slows by approximately 15ms per decade.",
+        "Routine causes cognitive compression where memories aggregate without distinct temporal landmarks.",
+      ],
+      sources: ["Cambridge Cognitive Neuroscience", "American Psychological Association Journal"],
+      coreHook: "Have you ever felt that childhood summers lasted forever, but recent years vanish in months?",
+    },
+    scriptData: {
+      hook: "Why does time seem to sprint as we get older?",
+      intro: "Welcome to CurioSphere. Today, we unpack the neurology of subjective time perception.",
+      scenes: [
+        {
+          sceneNumber: 1,
+          heading: "The Proportional Theory",
+          narration: "Paul Janet's 1897 proportional theory posits that each year represents a smaller fraction of our total lived experience.",
+          visualDescription: "Timeline visual dividing human lifespan into fractions with fluid glowing transitions.",
+          estimatedDurationSec: 40,
+        },
+        {
+          sceneNumber: 2,
+          heading: "Neural Saccades & Clocking",
+          narration: "As our neural pathways mature, the brain processes fewer novel sensory frames per minute.",
+          visualDescription: "3D brain scan highlighting the thalamus and neural signal transmission pulses.",
+          estimatedDurationSec: 50,
+        },
+      ],
+      outro: "To slow down time, introduce conscious novelty into your week. Subscribe to CurioSphere for more deep questions.",
+      callToAction: "Subscribe and share what year felt the fastest for you.",
+      wordCount: 410,
+    },
+    voiceData: {
+      voiceName: "en-US-ChristopherNeural",
+      durationSec: 175,
+      audioUrl: "/artifacts/media/audio/sample-curiosphere-1.wav",
+      format: "audio/wav 48kHz 24-bit",
+    },
+    renderData: {
+      outputUrl: "/artifacts/media/rendered/sample-curiosphere-1080p.mp4",
+      resolution: "1920x1080 (16:9)",
+      fps: 60,
+      sizeBytes: 24500000,
+      durationSec: 175,
+    },
+    thumbnailData: {
+      thumbnailUrl: "/artifacts/media/thumbnails/sample-curiosphere-thumb.jpg",
+      headline: "TIME IS ACCELERATING",
+      contrastScore: 96.2,
+    },
+    metadata: {
+      youtubeTitle: "The Physics of Why Time Moves Faster As You Age | CurioSphere",
+      description: "Why did summers feel endless as a kid, but adult years fly by? Dive into the neuroscience of subjective time.\n\n#science #curiosphere #psychology",
+      tags: ["time perception", "neuroscience", "curiosphere", "psychology facts", "brain science"],
+      hashtags: ["#curiosphere", "#science", "#facts"],
+      category: "27",
+    },
+    qaResults: {
+      passed: true,
+      checks: [
+        { name: "Audio Loudness", status: "PASSED", details: "-14.0 LUFS broadcast compliant." },
+        { name: "Framerate Stability", status: "PASSED", details: "Constant 60.0 fps." },
+        { name: "Subtitle Sync", status: "PASSED", details: "Zero drift across 175s." },
+      ],
+    },
+  }).returning();
+
+  await db.insert(jobLogsTable).values([
+    {
+      jobId: job1.id,
+      level: "info",
+      stage: "IDEA",
+      message: "Job initialized from user prompt: 'Subjective Time Acceleration'",
+      createdAt: new Date(now.getTime() - 2 * day),
+    },
+    {
+      jobId: job1.id,
+      level: "info",
+      stage: "RESEARCHED",
+      message: "Synthesized 3 core neurological studies and proportional theory framework.",
+      createdAt: new Date(now.getTime() - 1.8 * day),
+    },
+    {
+      jobId: job1.id,
+      level: "info",
+      stage: "SCRIPT_READY",
+      message: "Script drafted: 2 scenes, 410 words.",
+      createdAt: new Date(now.getTime() - 1.5 * day),
+    },
+    {
+      jobId: job1.id,
+      level: "info",
+      stage: "RENDERED",
+      message: "Rendered 1080p60 master file (24.5 MB).",
+      createdAt: new Date(now.getTime() - 0.5 * day),
+    },
+    {
+      jobId: job1.id,
+      level: "info",
+      stage: "READY_TO_UPLOAD",
+      message: "QA passed 100%. Master package ready for YouTube scheduling.",
+      createdAt: new Date(now.getTime() - 0.2 * day),
+    },
+  ]);
+
+  console.log("Seed complete with CurioSphere jobs!");
   process.exit(0);
 }
 
